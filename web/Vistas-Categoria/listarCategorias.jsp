@@ -33,14 +33,16 @@
                          
  <a href="<%= request.getContextPath() %>/categorias?opcion=eliminar&&id=<%= categoria.getId_categoria() %>" class="btn btn-danger btn-sm glyphicon glyphicon-remove" role="button">Eliminar</a>
                     </td>
-                       
+                    
                 </tr>
+                
                 <%
                 }
                 %>
             </table>
+          
         </div>
-        
+              <a href="../CrearPDF" class="btn btn-info btn-sm glyphicon" role="button" name="btnver">Ver PDF</a>
         <%@include file = "../WEB-INF/Vistas-Parciales/pie.jspf" %>
     </body>
 </html>

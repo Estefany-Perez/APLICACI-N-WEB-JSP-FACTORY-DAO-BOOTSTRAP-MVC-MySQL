@@ -50,7 +50,7 @@ public class Categorias extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
   
         
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/listarCategorias.jsp");
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categoria/listarCategorias.jsp");
         dispatcher.forward(request, response);
     } 
  
@@ -66,7 +66,7 @@ public class Categorias extends HttpServlet {
         //Evaluar si el parámetro es crear o listar o cualquier otro.
         if(parametro.equals("crear")){
             //Vista o formulario para registrar nueva categoria.
-            String pagina = "/Vistas-Categorias/crearCategoria.jsp";
+            String pagina = "/Vistas-Categoria/crearCategoria.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(pagina);
             dispatcher.forward(request, response);
             
@@ -79,7 +79,7 @@ public class Categorias extends HttpServlet {
             String nom_categoria = request.getParameter("nombre_cat");
             int estado_categoria = Integer.parseInt(request.getParameter("estado_cat"));
             
-            String pagina = "/Vistas-Categorias/crearCategoria.jsp?id_c="+id_categoria+"&&nombre_c="+nom_categoria+"&&estado_c="+estado_categoria+"&&senal=1";
+            String pagina = "/Vistas-Categoria/crearCategoria.jsp?id_c="+id_categoria+"&&nombre_c="+nom_categoria+"&&estado_c="+estado_categoria+"&&senal=1";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(pagina);
             dispatcher.forward(request, response);
             
