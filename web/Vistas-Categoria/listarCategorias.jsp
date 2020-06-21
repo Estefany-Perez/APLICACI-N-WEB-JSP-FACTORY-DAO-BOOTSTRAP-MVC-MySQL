@@ -42,7 +42,7 @@
             </table>
           
         </div>
-              <a href="../CrearPDF" class="btn btn-info btn-sm glyphicon" role="button" name="btnver">Ver PDF</a>
+              <a href="../CrearPDF" class="btn btn-info btn" role="button" name="btnver">Ver PDF</a>
         <%@include file = "../WEB-INF/Vistas-Parciales/pie.jspf" %>
     </body>
 </html>
